@@ -1,5 +1,6 @@
 -- SQL Murder Mystery
 -- Can you find out whodunnit?
+USE game;
 
 SELECT * 
 FROM crime_scene_report 
@@ -11,7 +12,7 @@ WHERE date = 20180115 AND type='murder' AND city = 'SQL City';
 
 SELECT *
 FROM person
-WHERE name LIKE('%Annabel%') OR address_street_name = 'Nothwestern Dr';
+WHERE name LIKE('%Annabel%');
 
 -- 16371ﾠAnnabel Millerﾠ490173ﾠ103ﾠFranklin Aveﾠ318771143
 
